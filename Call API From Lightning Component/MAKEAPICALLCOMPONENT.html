@@ -1,0 +1,11 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,
+                            flexipage:availableForRecordHome,force:hasRecordId,
+                            forceCommunity:availableForAllPageTypes,
+                            force:lightningQuickAction" 
+                controller="ApiCallLightningComponent"
+                access="global" >
+    <div class="slds-m-around_x-small">
+        <lightning:button variant="brand" label="Make CallOut" 
+                          iconName="action:apex" iconPosition="left" onclick="{!c.doHandleClick }" />
+    </div>
+</aura:component>
